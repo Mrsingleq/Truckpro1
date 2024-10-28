@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCANIA</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        {% comment %} <a href="{% url 'about' %}">About</a> {% endcomment %}
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mecerdes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renalt' %}">RENAULT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <h3>Welcome To Scania Garrage</h3>
+        <p> We are thrill to have you here please make your choice,<br>
+        as we are here to give you value for your money</p>
+    </div>
+    <div class="car-container">
+        <h3 class="het">Model: Scania 660S V8 Longline</h3>
+        <div class="slider" id="slider1">
+            <img src="{% static 'images/image/660S.jpg' %}"  alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/image/660S2.jpg' %}" alt="Scania 660S Image 1" >
+            <img src="{% static 'images/image/660S3.jpg' %}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/660S4.jpg' %}" alt="Scania 660S Image 1">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider1')">Previous</button>
+            <button class="btn" onclick="nextImage('slider1')">Next</button>
+        </div>
+        <p>
+        Engine Power: 660HP/ 485KW<br>
+        Description: 10 month neatly used truck<br>
+        Condition: Working perfectly <br>
+        Price: €50,000 </p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Scania 770s Frost edition</h3>
+        <div class="slider" id="slider2">
+            
+            <img src="{% static 'images/image/770S_FULL.jpg' alt="Scania 660S Image 1"%}" class="active">
+            <img src="{% static 'images/image/770S.jpg'%}" alt="Scania 660S Image 1" >
+            <img src="{% static 'images/image/770S_IN.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/770S_IN2.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/770S_IN3.jpg'%}" alt="Scania 660S Image 1">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider2')">Previous</button>
+            <button class="btn" onclick="nextImage('slider2')">Next</button>
+        </div>
+        <p>
+            
+            Description: New Scania 770s 4x2 Lhd Frost Edition,<br> 2 Pedal Opticriuse,
+            Retarder, Fridge, Premium Infontaine, Pto Prep,<br> 
+            Limited Edition Number 41 of 50,Twin Factory Tanks,Air Front Axle,<br>
+            4 Bag Rear Air, Michelin Tyres, All Night Air Con<br>
+            
+            Condition: Brand New <br>
+            
+            Engine power: V8/770hp <br>
+            
+            Price: €150,000</p>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Scania R- Series 450S</h3>
+        <div class="slider" id="slider3">
+            <img src="{% static 'images/image/R460_2.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/image/R460_3.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R460_5.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R460_6.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R460.jpg'%}" alt="Scania 660S Image 1">
+         </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider3')">Previous</button>
+            <button class="btn" onclick="nextImage('slider3')">Next</button>
+        </div>
+        <p> 
+
+            Description: Neatly use 1 year 6 months truck.<br>           
+            Engine power: 450HP/ 331KW <br>            
+                        
+            Condition: Working Perfectly  <br>           
+            Price:  €50,000</p>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: 2016, 16 Plate Scania R580</h3>
+        <div class="slider" id="slider4">
+            <img src="{% static 'images/image/R580_6.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/image/R580_7.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R580_8.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R580_9.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R580_10.jpg'%}" alt="Scania 660S Image 2">
+            <img src="{% static 'images/image/R580_11.jpg'%}" alt="Scania 660S Image 3">
+            <img src="{% static 'images/image/R580.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R580_IN1.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R580_IN2.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R580_IN3.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R580_IN4.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R580_IN5.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R580_IN6.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/R5805.jpg'%}" alt="Scania 660S Image 1">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider4')">Previous</button>
+            <button class="btn" onclick="nextImage('slider4')">Next</button>
+        </div>
+        <p>  
+            
+            Description: 6 month used 2016 16 Plate Scania R580 <br>
+            Topline Streamline Griffin 6x2 Midlift,lLeather,Retarder,<br>
+            2 Pedal Opticruise,Fridge,Microwave,Coffee Maker,<br>
+            Big Radio With Sat Nav.Top Bar,Twin Air Horns,Durabrites,<br>
+            Chassis Mounted Tool Box,Fixed 5th Wheel,Scania Maintained From New,
+            952414 Kms,April 25 Test,Cheap Tidy <br>  
+            
+            Condition: Working perfectly <br>  
+            
+            Engine power: 580HP<br>  
+            
+            Price: €90,000</p>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Scania S650</h3>
+        <div class="slider" id="slider5">
+            <img src="{% static 'images/image/S650_1.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650_4.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650_6.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650_7.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/image/S650_B.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650_F.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650_FULL.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650_FULL2.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650_IN1.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650_IN2.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650_IN3.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650 IN4.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650 IN5.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650 IN6.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650 S.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650 S2.jpg'%}" alt="Scania 660S Image 1">
+            <img src="{% static 'images/image/S650.jpg'%}"  alt="Scania 660S Image 1">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider5')">Previous</button>
+            <button class="btn" onclick="nextImage('slider5')">Next</button>
+        </div>
+        <p>
+            
+            Description: 2020 69 Plate Scania S650_High 6x2 Twin Wheel Tag Axle,<br>
+            50th Anniversary N0 1 Of 25, 2 Pedal Opticruise,Retarder,<br>
+            V8 Leather Package,Premium Infontaine Radio,TV Prep,Pto Prep,<br>
+            Single Bunk With Swivel Passenger Seat,Fridge,Microwave,<br>
+            Coffee Maker,Air Front Axle,Twin Air Horns,Durabrites,<br>
+            Rear Perimeter Kit,Electric Top Spoiler,2 Factory Tanks,<br>
+            Slider,All Good Tyres,424249 Kms,Jan 2025 Test,<br>
+            Tidy Truck And Original 50 Year Edition <br>  
+            
+            Condition: Tidy truck, 50 years edition <br>  
+            
+            Engine power: 650HP<br>  
+            
+            Price: €60,000</p>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+    </div>
+    {% comment %} <br>
+    <br>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Car Model 1</h3>
+        <div class="slider" id="slider1">
+            <img src="images/image/w1.jpg">
+      alt="Scania 660S Image 1"       <img src="images/image/w2.jpg">
+      alt="Scania 660S Image 1"   </div>
+
+        <p></p>
+
+        <button class="pur">Purchase/Hire</button>
+    </div> {% endcomment %}
+
+    <div class="car-container">
+        <h3 class="het">Model: Scania 660s</h3>
+        <div class="slider" id="slider54">
+            <img src="{% static 'images/image/white_2.jpg'%}" class="active">
+            <img src="{% static 'images/image/white_in1.jpg'%}">
+            <img src="{% static 'images/image/white_in2.jpg'%}">
+            <img src="{% static 'images/image/white_in3.jpg'%}">
+            <img src="{% static 'images/image/white_in4.jpg'%}">
+            <img src="{% static 'images/image/white_in5.jpg'%}">
+            <img src="{% static 'images/image/white_in6.jpg'%}">
+            <img src="{% static 'images/image/white_in7.jpg'%}">
+            <img src="{% static 'images/image/white.jpg'%}">
+            <img src="{% static 'images/image/white3.jpg'%}">
+            <img src="{% static 'images/image/white4.jpg'%}">
+            <img src="{% static 'images/image/ww.jpg'%}">
+             </div>
+
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider54')">Previous</button>
+            <button class="btn" onclick="nextImage('slider54')">Next</button>
+            <p>
+
+                Description: New Scania 660s High 6x2 Midlift Steer(LHD),2 Pedal Opticruise,V8 Leather Package,<br>
+                Retarder,Premium Infontaine,Air Front Axle,Fridge,Microwave,Coffee Maker,Pto Prep,Durabrites,<br>
+                Super Singles Front And Midlift, Good Spec 660 
+                
+                Condition: Brand New
+                
+                Engine power: V8/ 660HP
+                
+                Price: €130,000</p>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div> 
+
+    <div class="car-container">
+        <h3 class="het">Model: Scania 770s Frost edition</h3>
+        <div class="slider" id="slider6">
+            <img src="{% static 'images/image/S1.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/image/S2.jpg'%}">
+            <img src="{% static 'images/image/S3.jpg'%}">
+            <img src="{% static 'images/image/S4.jpg'%}">
+            <img src="{% static 'images/image/S5.jpg'%}">
+            <img src="{% static 'images/image/S6.jpg'%}">
+            <img src="{% static 'images/image/S7.jpg'%}">
+            <img src="{% static 'images/image/S8.jpg'%}">
+            <img src="{% static 'images/image/S9.jpg'%}">
+            <img src="{% static 'images/image/S10.jpg'%}">
+           <img src="{% static 'images/image/S11.jpg'%}">
+           <img src="{% static 'images/image/S12.jpg'%}">
+           <img src="{% static 'images/image/S13.jpg'%}">
+           <img src="{% static 'images/image/S14.jpg'%}">
+           <img src="{% static 'images/image/S15.jpg'%}">
+           <img src="{% static 'images/image/S16.jpg'%}">
+           <img src="{% static 'images/image/S17.jpg'%}">
+           <img src="{% static 'images/image/S18.jpg'%}">
+       </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider6')">Previous</button>
+            <button class="btn" onclick="nextImage('slider6')">Next</button>
+        </div>
+    <p>
+        
+        Description: New Scania 770s 4x2 Lhd Frost Edition, 2 Pedal Opticriuse,<br> 
+        Retarder, Fridge, Premium Infontaine, Pto Prep, Limited Edition<br> 
+        Number 41 of 50,Twin Factory Tanks,Air Front Axle, 4 Bag Rear Air,<br> 
+        Michelin Tyres, All Night Air Con<br>  
+        
+        Condition: Brand New <br>  
+        
+        Engine power: V8/770hp<br>  
+        
+        Price: €150,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+       
+    </div>
+
+    
+    <script src="{% static 'java/sliding.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruckSpot Int</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+    <style>
+        .container{
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            display: inline-block;
+        }
+        img{
+            border-radius: 20px;
+            height: auto;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        {% comment %} <a href="{% url 'about' %}">About</a> {% endcomment %}
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mecerdes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renalt' %}">RENALT</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h3>Welcome to neatly Trucks, Cars and Heavy duties trucks</h3>
+        <p>Here in Neatly we have different types and models of trucks suitable<br>
+        for all your needs, either for purchases and hire, all at your fingertips.</p>
+    </div>
+    
+    <div class="container">
+    <img src="{% static 'images/image/660S3.jpg'%}">
+    
+    <img src="{% static 'images/img benz/ACT1851 4.jpg'%}">
+    
+    <img src="{% static 'images/img daf/CF480 6.jpg'%}">
+   
+    <img src="{% static 'images/img iveco/WAY 1.jpg'%}">
+    </div>
+   
+    <div class="container">
+    <img src="{% static 'images/img man/TGA 8.jpg'%}">
+    
+    <img src="{% static 'images/img renalt/C520.jpg'%}">
+    
+    <img src="{% static 'images/img volvo/BFH500 IN2.jpg'%}">
+    <img src="{% static 'images/img benz/ACT2548 4.jpg'%}">
+    </div>
+    <h3>Why Buy Trucks From TruckSpot Intl?</h3>
+    <p> We make buying and hiring of trucks in Nigeria easier than ever! <br>
+        Pair that with our certified used trucks and numerous programs and you will notice why truck drivers<br>
+        and trucking companies choose Beno Trucking Nig. Limited over our competitors.<br>
+        We offer qualitative aftermarket support services which involve activities during warranty periods<br>
+        such as technical assistance, customer care, spare parts, and accessories sale.
+    </p>
+    <footer>&copy Copyright TruckSpot Intl All Rights Reserved</footer>
+    <script src="{% static 'java/sliding.js' %}"></script>
+</body>
+</html>

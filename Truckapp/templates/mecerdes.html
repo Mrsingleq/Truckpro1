@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCEDES</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        {% comment %} <a href="{% url 'about' %}">About</a> {% endcomment %}
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mecerdes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renalt' %}">RENAULT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <h3>Welcome To Mercedes Garrage</h3>
+        <p> We are thrill to have you here please make your choice,<br>
+        as we are here to give you value for your money</p>
+    </div>
+    <div class="car-container">
+        <h3 class="het">Model: 2012 Mercedes-Benz 1845 LS </h3>
+        <div class="slider" id="slider18">
+            <img src="{% static 'images/img benz/A1845 3.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/A1845 1.jpg'%}">
+            <img src="{% static 'images/img benz/A1845.jpg'%}">
+            <img src="{% static 'images/img benz/A1845 2.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider18')">Previous</button>
+            <button class="btn" onclick="nextImage('slider18')">Next</button>
+
+    <p>
+
+        
+        
+        Description: 2012 Mercedes-Benz Actros 1845 LS BigSpace - 450 hp, <br>
+        BigSpace Cabin, Euro 6, Well-Maintained, Lots of Options, <br>
+        Ideal for Long-Haul Transport. Reliable and Ready for Immediate Use.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power:450HP<br>
+        
+        Price: €14,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz Actros 1851</h3>
+        <div class="slider" id="slider19">
+            <img src="{% static 'images/img benz/A1851 3.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/A1851 1.jpg'%}">
+            <img src="{% static 'images/img benz/A1851 2.jpg'%}">
+            <img src="{% static 'images/img benz/A1851 7.jpg'%}">
+            <img src="{% static 'images/img benz/A1851 4.jpg'%}">
+            <img src="{% static 'images/img benz/A1851.jpg'%}">
+            <img src="{% static 'images/img benz/A1851 IN.jpg'%}">
+            <img src="{% static 'images/img benz/A1851 IN3.jpg'%}">
+            {% comment %} <img src="{% static 'images/img benz/A1851 IN2.jpg'%}" alt="her"> {% endcomment %}
+            <img src="{% static 'images/img benz/A1851 IN7.jpg'%}"alt="hur">
+            <img src="{% static 'images/img benz/A1851 IN6.jpg'%}"alt="hor">
+            <img src="{% static 'images/img benz/A1851 IN5.jpg'%}"alt="hkr">
+            <img src="{% static 'images/img benz/A1851 IN4.jpg'%}"alt="hir">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider19')">Previous</button>
+            <button class="btn" onclick="nextImage('slider19')">Next</button>
+
+    <p>
+
+        
+        Description: 2021 Mercedes-Benz Actros 1851 - 4x2, <br>
+        High Cabin, 510 hp, 373,804 km, Euro 6, <br>
+        Pneumatic Suspension, 840L Fuel Capacity with Second Diesel Tank, <br>
+        12-Speed Smart Gearbox, Air Conditioning, Digital Tachograph, <br>
+        Blue Exterior, Aluminum Rims. Clean, Tidy, <br>
+        and Ready for Long-Distance Hauls.<br>
+        
+        Condition: Working perfectly <br>
+        
+        Engine power: 510HP<br>
+        
+        Price: €50,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Actros 3251</h3>
+        <div class="slider" id="slider20">
+            <img src="{% static 'images/img benz/A3251 1.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/A3251 2.jpg'%}">
+            <img src="{% static 'images/img benz/A3251 3.jpg'%}">
+            <img src="{% static 'images/img benz/A3251 5.jpg'%}">
+            <img src="{% static 'images/img benz/A3251 6.jpg'%}">
+            <img src="{% static 'images/img benz/A3251.jpg'%}">
+            <img src="{% static 'images/img benz/A3251 IN.jpg'%}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider20')">Previous</button>
+            <button class="btn" onclick="nextImage('slider20')">Next</button>
+
+    <p>
+
+        
+        
+        Description: 2015 Mercedes-Benz Actros 3251 8x2 with <br>
+        HIAB Hooklift - 510 hp, 568,800 km, Euro 6, 8x2 Axle Configuration, <br>
+        Well Maintained, Ideal for Construction or Waste Management. <br>
+        Clean and Ready for Immediate Work.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 510HP<br>
+        
+        Price: €35,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz Actros 1848</h3>
+        <div class="slider" id="slider21">
+            <img src="{% static 'images/img benz/ACT1848 1.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/ACT1848 2.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 3.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 4.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 5.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 B.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 ENG1.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 ENG.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 IN.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 IN3.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 IN2.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 IN4.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 IN5.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 IN6.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 IN7.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848 IN8.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1848.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider21')">Previous</button>
+            <button class="btn" onclick="nextImage('slider21')">Next</button>
+
+    <p>
+
+        
+        
+        Description: 2016 Mercedes-Benz Actros 1848 - 476 HP, <br>
+        Giga Space, Retarder, Euro 6, 702,000 km, Full Options, <br>
+        Excellent Condition. Price. Ready for Immediate Delivery.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 476HP<br>
+        
+        Price: €20,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz Actros 1851 LS</h3>
+        <div class="slider" id="slider22">
+            <img src="{% static 'images/img benz/ACT1851 1.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/ACT1851 2.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 3.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 4.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 5.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 IN1.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 IN.jpg'%}" alt="image not found">
+            <img src="{% static 'images/img benz/ACT1851 IN2.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 IN3.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 IN4.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 IN5.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 IN6.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1851 IN7.jpg'%}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider22')">Previous</button>
+            <button class="btn" onclick="nextImage('slider22')">Next</button>
+
+    <p>
+
+         
+        
+        Description: 2020 Mercedes-Benz Actros 1851 LS <br>
+        Gigaspace - 510 hp, 733,223 km, Euro 6, 4x2, <br>
+        960L Fuel Capacity with Second Diesel Tank, <br>
+        High Cabin (Gigaspace), 12-Speed Smart Gearbox, <br>
+        Voith Slowdown Device, Pneumatic Suspension, <br>
+        Aluminum Rims, Cruise Control, Air Conditioning, <br>
+        Stationary Radiator. Clean and Ready for Long-Distance Hauls.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 510HP<br>
+        
+        Price: €45,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz Actros 1963</h3>
+        <div class="slider" id="slider23">
+            <img src="{% static 'images/img benz/ACT1963 1.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/ACT1963 2.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 7.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 8.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 9.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 10.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 11.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 12.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 13.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 14.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 15.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 17.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 19.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 IN.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 IN1.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 IN2.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 IN3.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 IN4.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 IN5.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 IN6.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963 IN7.jpg'%}">
+            <img src="{% static 'images/img benz/ACT1963.jpg'%}"> 
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider23')">Previous</button>
+            <button class="btn" onclick="nextImage('slider23')">Next</button>
+
+    <p>
+
+        
+        
+        Description: MERCEDES BENZ ACTROS 1963 GIGA SPACE - 626 hp, <br>
+        978,000 km, EURO 6, Fully Air-Suspended, Giga Space Cabin, <br>
+        700-litre Aluminium Tank, Ideal for Long-Distance Haulage. <br>
+        Well-Maintained and Ready for Immediate Use.<br>
+        
+        Condition: Working perfectly <br>
+        
+        Engine power: 626HP<br>
+        
+        Price: €35,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz Actros 2548 SST</h3>
+        <div class="slider" id="slider24">
+            <img src="{% static 'images/img benz/ACT2548 2.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/ACT2548 1.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 4.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 3.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 5.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 7.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 ENG.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 IN1.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 IN.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 IN2.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 IN3.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 IN5.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 IN6.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 IN7.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 IN8.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 IN9.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548 T.jpg'%}">
+            <img src="{% static 'images/img benz/ACT2548.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider24')">Previous</button>
+            <button class="btn" onclick="nextImage('slider24')">Next</button>
+
+    <p>
+
+        
+        Description: 2018 Mercedes-Benz Actros 2548 <br>
+        Silver Star Twinsteer - 476 hp, 329,000 km, Euro 6, <br>
+        GigaSpace Cabin, Twinsteer, Air suspension, Heavy Engine Brake, <br>
+        Fully Equipped with Extras. Price not provided. <br>
+        Well-Maintained and Ideal for Long-Haul Transport.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 476HP<br>
+        
+        Price: €48000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz Arocs 1842</h3>
+        <div class="slider" id="slider25">
+            <img src="{% static 'images/img benz/ARO1842 1.jpg'%}">
+            <img src="{% static 'images/img benz/ARO1842.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/ARO1842 3.jpg'%}">
+            <img src="{% static 'images/img benz/ARO1842 IN.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider25')">Previous</button>
+            <button class="btn" onclick="nextImage('slider25')">Next</button>
+
+    <p>
+
+        
+        
+        Description: 2021 Mercedes-Benz Arocs 1842 <br>
+        LS 4x4 Tractor Unit - 420 hp, Low Mileage at Only 145,973 km, <br>
+        Ideal for Off-Road and Heavy-Duty Transport. <br>
+        Price: Contact for details. <br>
+        Reliable and Ready for Immediate Use.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 420HP<br>
+        
+        Price:  €55,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz Attego 1224</h3>
+        <div class="slider" id="slider26">
+            <img src="{% static 'images/img benz/ATEGO1224 3.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/ATEGO1224 1.jpg'%}">
+            <img src="{% static 'images/img benz/ATEGO1224.jpg'%}">
+            <img src="{% static 'images/img benz/ATEGO1224 IN.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider26')">Previous</button>
+            <button class="btn" onclick="nextImage('slider26')">Next</button>
+
+    <p>
+
+        
+        
+        Description: 2020 Mercedes-Benz Atego 1224 - 240 hp, <br>
+        166,493 km, ADR Certified, Sörensen 1,500 kg Taillift, <br>
+        11,990 kg GVW, Euro 6, Ideal for Hazardous Goods Transport. <br>
+        Clean and Ready for Immediate Use.<br>
+        
+        Condition: Working perfectly <br>
+        
+        Engine power: 240HP<br>
+        
+        Price: €50,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz Atego 1530</h3>
+        <div class="slider" id="slider27">
+            <img src="{% static 'images/img benz/ATEGO1530 11.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/ATEGO1530 1.jpg'%}">
+            <img src="{% static 'images/img benz/ATEGO1530 22.jpg'%}">
+            <img src="{% static 'images/img benz/ATEGO1530 33.jpg'%}">
+            <img src="{% static 'images/img benz/ATEGO1530 44.jpg'%}">
+            <img src="{% static 'images/img benz/ATEGO1530.jpg'%}">
+            <img src="{% static 'images/img benz/ATEGO1530 IN1.jpg'%}">
+            <img src="{% static 'images/img benz/ATEGO1530 IN.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider27')">Previous</button>
+            <button class="btn" onclick="nextImage('slider27')">Next</button>
+
+    <p>
+
+        
+        
+        Description: 2020 Mercedes-Benz Atego 1530 BigSpace - 135,381 km, <br>
+        Loading Capacity 8,280 kg, Own Weight 7,720 kg, <br>
+        Gross Vehicle Weight 16,000 kg, Bär Cargolift 2,000 kg taillift. <br>
+        Well-Maintained and Ready for Immediate Use!<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 299HP<br>
+        
+        Price: €50,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz MP4 1843 LS</h3>
+        <div class="slider" id="slider28">
+            <img src="{% static 'images/img benz/MP1843 1.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/MP1843 3.jpg'%}">
+            <img src="{% static 'images/img benz/MP1843 4.jpg'%}">
+            <img src="{% static 'images/img benz/MP1843 5.jpg'%}">
+            <img src="{% static 'images/img benz/MP1843.jpg'%}">
+            <img src="{% static 'images/img benz/MP1843 IN2.jpg'%}">
+            <img src="{% static 'images/img benz/MP1843 IN1.jpg'%}">
+            <img src="{% static 'images/img benz/MP 1843 IN.jpg'%}" alt="Image Not Found">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider28')">Previous</button>
+            <button class="btn" onclick="nextImage('slider28')">Next</button>
+
+    <p>
+
+        
+        
+        Description: 2016 Mercedes-Benz Actros MP4 1843 <br>
+        LS - ADR EXIII FL OX AT - 430 hp, 727,821 km, Euro 6, <br>
+        Certified for Hazardous Goods Transport (ADR EXIII FL OX AT), <br>
+        Well-Maintained, Ideal for Specialized Transport. <br>
+        Clean and Ready for Immediate Use.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 430HP<br>
+        
+        Price: €18,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="car-container">
+        <h3 class="het">Model: Mercedes-Benz SK 1850 LS</h3>
+        <div class="slider" id="slider29">
+            <img src="{% static 'images/img benz/SK1850 1.jpg'%}" class="active">
+            <img src="{% static 'images/img benz/SK1850 2.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 3.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 4.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 5.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 6.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 7.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 IN1.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 IN2.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 IN3.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 IN5.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 IN6.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 IN7.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 IN8.jpg'%}">
+            <img src="{% static 'images/img benz/SK1850 IN.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider29')">Previous</button>
+            <button class="btn" onclick="nextImage('slider29')">Next</button>
+
+    <p> 
+
+        
+        
+        Description: 1995 Mercedes-Benz SK 1850 LS V8 - 503 hp, <br>
+        1,204,800 km, Full Air Suspension, Retarder, Euro 1, <br>
+        Special Show Truck with Alcoa Wheels and Michelin Tires. <br>
+        Price: Dependent on market, condition, and seller. <br>
+        Ready for Immediate Use.<br>
+        
+        Condition: Working perfectly <br>
+        
+        Engine power: 503HP<br>
+        
+        Price: €27,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+
+    
+    <script src="{% static 'java/sliding.js' %}"></script>
+</body>
+</html>

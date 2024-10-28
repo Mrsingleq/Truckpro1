@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    {%load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+    <style>
+        *{
+          padding: 0;
+          margin: 0;
+        }
+        body{
+          color: beige;
+          background-color: rgb(48, 44, 44);
+          font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        h2{
+          text-align: center;
+        }
+        form{
+          background-color: rgb(48, 40, 40);
+          box-shadow: 5px 5px 10px  rgba(73, 68, 68, 0.432);
+          max-width: 510px;
+          aspect-ratio: 1 / .5;
+          margin-inline: auto;
+          box-sizing: border-box;
+          padding: 1rem;
+          border-radius: .5rem;
+          transform: scale(.8);
+          
+        }
+        .name{
+          width: 100%;
+          padding: .5em 0.6em;
+          box-sizing: border-box;
+        }
+        .space{
+          padding: .3em 0.4em;
+          box-sizing: border-box;
+          margin: .2em 0;
+          border-radius: .3rem;
+    
+        }
+        .selector{
+           display: flex;
+           align-items: start;
+           align-items: center;
+        }
+        .btnc{
+          padding: .8em 1.5em;
+          display: block;
+          margin-left: auto;
+          border-radius: .8rem;
+          border: none;
+          cursor: pointer;
+          font-weight: bold;
+        }
+        
+        .gap{
+          margin-left: -.07551em;
+        }
+        @media (max-width:515px) {
+          .selector{
+            flex-direction: column;
+            align-items: start;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <h2>Contact Us</h2>
+    <div>
+      {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+        {% endif %}
+        <form method="POST" action="{% url 'contact_view' %}">
+          {% csrf_token %}
+           
+            <label>Name:</label><br>
+            <input class="name" type="text" name="fuln" required placeholder="Full Name"><br>
+            <label>Email:</label>
+            <input class="space" type="text" name="email" required placeholder="Email" ><br>
+            <label>Phone Num:</label>
+            <input class="space" type="text" name="num" required placeholder="Contact Number" ><br>
+        
+            <label>Country:</label>
+            <input class="space" type="text" name="country" required placeholder="Country Name" ><br>
+            <label>State:</label>
+            <input class="space" type="text" name="state" required placeholder="State" ><br>
+            <label>Postal/Zip Code:</label>
+            <input class="space" type="text" name="postal" required placeholder="Postal/Zip code" ><br>
+            <label>Address:</label><br>
+            <textarea name="address" rows="5" cols="40" required placeholder="Address"></textarea><br>
+     <div class="selector">  
+      <div>
+            <label for="id_car_brand">Select Car Brand:</label>
+            <select class="gap" id="id_car_brand" name="car_brand" onchange="updateModels()" required>
+                <option  value="" disabled selected>Select a brand</option>
+                <option value="benz">Mercedes-Benz</option>
+                <option value="volvo">Volvo</option>
+                <option value="man">MAN</option>
+                <option value="scania">Scania-R-Series</option>
+                <option value="daf">DAF</option>
+                <option value="renault">Renault</option>
+                <option value="iveco">Iveco</option>
+            </select>
+        </div>
+        <div>
+            <label for="id_car_model">Select Car Model:</label>
+            <select id="id_car_model" name="car_model" required>
+                <option value="" disabled selected>Select a model</option>
+            </select>
+            </div>
+          </div> <br>
+            <label for="id_message">Your Message:</label><br>
+            <textarea id="id_message" name="message" rows="5" cols="40" required></textarea><br><br>
+        
+            <button type="submit" class="btnc">Send Message</button>
+          </form>
+    </div>
+
+<script>
+
+    function updateModels() {
+        const brand = document.getElementById("id_car_brand").value;
+        const modelSelect = document.getElementById("id_car_model");
+        const models = {
+            benz: [ "ACTROS 1851","ACTROS 3251","MP4 1843","ATTEGO 1224","ACTROS 1845","AROCS 1842","ATEGO 1530","ACTROS 1963","SK 1850 LS","ACTROS 2548","ACTROS 1848"],
+            volvo: ["FH 500","FH 500 EURO EMISSION"],
+            man: ["TGX 26. 640","TGX 28. 500","TGX 18.470", "18.440 TGA XXL", "TGX 18.500", "TGX 28.500XXL", "TGX 26.460", "510 LION S","T520"],
+            scania: ["450S","660S","R580","770S","S650","S580","S650","R580","S660","770S"],
+            daf: ["XF 530","XF 480","XF 460","CF 480","LF 260",],
+            renault: ["T520","C520","T520 HIGH","T RANGE 480",],
+            iveco: ["S-WAY 570","STRALIS 410","STRALIS HI WAY 440","IVECO STRALIS","STRALIS 440 HO WAY","STRALIS 660S 55 HI WAY","STRALIS 460","HI WAY 440"],
+        };
+
+        modelSelect.innerHTML = ""; // Clear previous options
+        models[brand].forEach(function(model) {
+            let option = document.createElement("option");
+            option.value = model;
+            option.text = model;
+            modelSelect.appendChild(option);
+        });
+    }
+</script>
+</body>
+</html>

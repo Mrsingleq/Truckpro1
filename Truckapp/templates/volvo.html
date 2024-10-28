@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLVO</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        {% comment %} <a href="{% url 'about' %}">About</a> {% endcomment %}
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mecerdes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renalt' %}">RENAULT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <h3>Welcome To Volvo Garrage</h3>
+        <p> We are thrill to have you here please make your choice,<br>
+        as we are here to give you value for your money</p>
+        </div>
+
+<div class="car-container">
+    <h3 class="het">Model: Volvo Fh500</h3>
+    <div class="slider" id="slider7">
+            <img src="{% static 'images/img volvo/BFH500 2.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/img volvo/BFH500 3.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 1.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 4.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 IN.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 IN8.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 IN7.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 IN6.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 IN5.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 IN4.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 IN3.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 IN2.jpg'%}">
+            <img src="{% static 'images/img volvo/BFH500 IN1.jpg'%}">
+        </div>
+
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider7')">Previous</button>
+            <button class="btn" onclick="nextImage('slider7')">Next</button>
+        </div>
+    <p> 
+        
+        Description: 2018 Volvo FH 500 Double Boogie, Full Air, <br>
+        Show Truck, Special Interior, Leather Seats, TV, Coffee Maker,<br> 
+        Heated and Ventilated Seats, Sliding Dish, 500 hp, 575,655 Kms, <br>
+        Clean and Well Maintained, Tidy clean.<br>
+        
+        Condition: Working perfectly <br>
+        
+        Engine power: D13K500/ 500HP<br>
+        
+        Price: €50,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        
+    </div>
+    
+    <div class="car-container">
+        <h3 class="het">Model: 2019 Volvo Fh500</h3>
+        <div class="slider" id="slider8">
+            <img src="{% static 'images/img volvo/DFH500 4.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/img volvo/DFH500 3.jpg'%}">
+            <img src="{% static 'images/img volvo/DFH500.jpg'%}">
+            <img src="{% static 'images/img volvo/DFH500 1.jpg'%}">
+            <img src="{% static 'images/img volvo/DFH500 2.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider8')">Previous</button>
+            <button class="btn" onclick="nextImage('slider8')">Next</button>
+        </div>
+    <p>
+        
+        Description: 2019 Volvo FH 500 Sleeper, Fully Loaded, Leather Seats,<br> 
+        TV, Full Air Suspension, Dynamic Steering, Dual Clutch Transmission,<br> 
+        Hydraulic System, I-Park Cool, Sliding Dish, Diamond Plate, <br>
+        Side Skirts, 500 hp Engine, Perfect for Long-Distance Hauls, <br>
+        Well-Maintained, Cheap and Tidy <br>
+        
+        Condition: Working perfectly <br>
+        
+        Engine power: 500Hp<br>
+        
+        Price: €60,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        
+    </div>
+
+
+    <div class="car-container">
+        <h3 class="het">Model: Volvo Fh 500</h3>
+        <div class="slider" id="slider9">
+            <img src="{% static 'images/img volvo/FH500 3.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/img volvo/FH500 1.jpg'%}">
+            <img src="{% static 'images/img volvo/FH500 2.jpg'%}">
+            <img src="{% static 'images/img volvo/FH500.jpg'%}">
+            <img src="{% static 'images/img volvo/FH500 IN6.jpg'%}">
+            <img src="{% static 'images/img volvo/FH500 IN4.jpg'%}">
+            <img src="{% static 'images/img volvo/FH500 IN3.jpg'%}">
+            <img src="{% static 'images/img volvo/FH500 IN1.jpg'%}">
+            <img src="{% static 'images/img volvo/FH500 IN2.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider9')">Previous</button>
+            <button class="btn" onclick="nextImage('slider9')">Next</button>
+        </div>
+        <p> 
+            
+            Description: 2017 Volvo FH500 6x2 Show Truck, Complete, <br>
+            Special Interior, Leather Chairs, Side Skirt, Tear Plate, <br>
+            Sliding Dish, Light Horns, 761,655 Kms, Spoilers, <br>
+            Coffee Maker, VEB+, Cheap Tidy.<br>
+            
+            Condition: Working perfectly <br>
+            
+            Engine power: D13TC/ 500Hp<br>
+            
+            Price:  €50,000</p>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        
+    </div>
+   
+
+    <div class="car-container">
+        <h3 class="het">Model: Volvo FH500</h3>
+        <div class="slider" id="slider10">
+            <img src="{% static 'images/img volvo/GFH500 5.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/img volvo/GFH500 4.jpg'%}">
+            <img src="{% static 'images/img volvo/GFH500 2.jpg'%}">
+            <img src="{% static 'images/img volvo/GFH500 3.jpg'%}">
+            <img src="{% static 'images/img volvo/GFH500.jpg'%}">
+            <img src="{% static 'images/img volvo/GFH500 1.jpg'%}">
+            <img src="{% static 'images/img volvo/GFH500 IN5.jpg'%}">
+            <img src="{% static 'images/img volvo/GFH500 IN4.jpg'%}">
+            <img src="{% static 'images/img volvo/GFH500 IN.jpg'%}">
+            <img src="{% static 'images/img volvo/GFH500 IN1.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider10')">Previous</button>
+            <button class="btn" onclick="nextImage('slider10')">Next</button>
+        </div>
+    <p> 
+        Description: 2015 Volvo FH 500 - 6x2 Boogie, <br>
+        Low Mileage at 371,901 km, 500 hp, Diesel, <br>
+        Special Interior, Leather Seats, I-Shift Transmission, <br>
+        Full Air Suspension, Sliding Dish, Boogie Lift, Euro 6, <br>
+        Perfect for Long-Haul and Heavy-Duty Applications, <br>
+        Well Maintained, Cheap and Tidy <br>
+        
+        Condition: Working perfectly <br>
+        
+        Engine power: D13K500/ 500HP
+        
+        Price: €40,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        
+    </div>
+   
+
+    <div class="car-container">
+        <h3 class="het">Model: 2015 FH500 euro6 emission</h3>
+        <div class="slider" id="slider11">
+            <img src="{% static 'images/img volvo/RFH500 5.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/img volvo/RFH500 1.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 3.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 6.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 7.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 IN9.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 IN8.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 IN6.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 IN10.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 IN1.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 IN.jpg'%}">
+            <img src="{% static 'images/img volvo/RFH500 IN4.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider11')">Previous</button>
+            <button class="btn" onclick="nextImage('slider11')">Next</button>
+        </div>
+    <p> 
+        Description: 2015 Volvo FH 500 with Alcoa Wheels, <br>
+        Euro 6, Used, First Registered 03-2015, Diesel, <br>
+        1,230,128 Kms, 12.777 cc Engine, 500 hp, 8,064 kg Curb Weight, <br>
+        12,936 kg Load Capacity, 21,000 kg Max Weight, <br>
+        621 cm Length, 254 cm Width, Wheelbase 380 cm, <br>
+        APK Tested Until 04/2025, Cheap and Tidy.<br>
+        
+        Condition: Working perfectly <br>
+        Engine power: D13K500/ 500HP<br>
+        Price: €25,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+    </div>
+    
+
+
+    <div class="car-container">
+        <h3 class="het">Model: Volvo FH 500 Turbo Compound</h3>
+        <div class="slider" id="slider12">
+            <img src="{% static 'images/img volvo/TFH500 6.jpg'%}" alt="Scania 660S Image 1" class="active">
+            <img src="{% static 'images/img volvo/TFH500 4.jpg'%}">
+            <img src="{% static 'images/img volvo/TFH500 2.jpg'%}">
+            <img src="{% static 'images/img volvo/TFH500 3.jpg'%}">
+            <img src="{% static 'images/img volvo/TFH500 1.jpg'%}">
+            <img src="{% static 'images/img volvo/TFH500 IN1.jpg'%}">
+            <img src="{% static 'images/img volvo/TFH500 IN4.jpg'%}">
+            <img src="{% static 'images/img volvo/TFH500 IN2.jpg'%}">
+            <img src="{% static 'images/img volvo/TFH500 IN.jpg'%}">
+            <img src="{% static 'images/img volvo/TFH500.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider12')">Previous</button>
+            <button class="btn" onclick="nextImage('slider12')">Next</button>
+        </div>
+    <p>
+        Description: 5 month used 2023 23 Plate Volvo FH 500 Turbo, <br>
+        Compound 6x2 Midlift, Leather, I-Shift Automatic, <br>
+        Fridge, Microwave, Coffee Maker, Large Radio with Sat Nav, <br>
+        Top Bar, Twin Air Horns, Durabrites, Chassis Mounted Tool Box, <br>
+        Fixed 5th Wheel, Volvo Maintained From New, 123,456 Kms, <br>
+        October 24 Test, Cheap Tidy.<br>
+        
+        Condition: Neatly use <br>
+        
+        Engine power: D13TC/ 500HP <br>
+        
+        Price: €90,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+    </div>
+    <script src="{% static 'java/sliding.js' %}"></script>
+</body>
+</html>

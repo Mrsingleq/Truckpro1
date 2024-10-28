@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAN</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        {% comment %} <a href="{% url 'about' %}">About</a> {% endcomment %}
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mecerdes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renalt' %}">RENAULT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <h3>Welcome To Man Garrage</h3>
+        <p> We are thrill to have you here please make your choice,<br>
+        as we are here to give you value for your money</p>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: MAN 510 Individual Lion S</h3>
+        <div class="slider" id="slider30">
+            <img src="{% static 'images/img man/LION 2.jpg'%}" class="active">
+            <img src="{% static 'images/img man/LION 1.jpg'%}">
+            <img src="{% static 'images/img man/LION .jpg'%}">
+            <img src="{% static 'images/img man/LION 3.jpg'%}">
+            <img src="{% static 'images/img man/LION 4.jpg'%}">
+            <img src="{% static 'images/img man/LION IN1.jpg'%}">
+            <img src="{% static 'images/img man/LION IN3.jpg'%}">
+            <img src="{% static 'images/img man/LION IN2.jpg'%}">  
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider30')">Previous</button>
+            <button class="btn" onclick="nextImage('slider30')">Next</button>
+
+    <p> 
+
+        
+        
+        Description: 2021 MAN 510 Individual Lion S - 510 HP, <br>
+        167,606 km, Fully Loaded with Leather Premium Seats, <br>
+        Alcantara & Red Stitching, Auto Box, Microwave, <br>
+        Coffee Maker, TV, MAN Turn Assist, Top Bar Beacons, <br>
+        Full DVD Cameras & Sensors. <br>
+        Warranty and Servicing until February 2025.<br>
+        
+        Condition: Truck as new and ready for immediate use.<br>
+        
+        Engine power: 510HP<br>
+        
+        Price: €45,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: MAN 510 Individual Lion S</h3>
+        <div class="slider" id="slider31">
+            <img src="{% static 'images/img man/MAN 510 3.jpg'%}" class="active">
+            <img src="{% static 'images/img man/MAN 510 1.jpg'%}">
+            <img src="{% static 'images/img man/MAN 510 4.jpg'%}">
+            <img src="{% static 'images/img man/MAN 510 2.jpg'%}">
+            <img src="{% static 'images/img man/MAN 510.jpg'%}">
+            <img src="{% static 'images/img man/MAN 510 5.jpg'%}">
+            <img src="{% static 'images/img man/MAN 510 6.jpg'%}">
+            <img src="{% static 'images/img man/MAN 510 7.jpg'%}">
+            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider31')">Previous</button>
+            <button class="btn" onclick="nextImage('slider31')">Next</button>
+
+    <p> 
+
+        
+        
+        Description: 2021 MAN 510 Individual Lion S - 510 HP, <br>
+        167,606 km, Fully Loaded with Leather Premium Seats, <br>
+        Alcantara & Red Stitching, Auto Box, Microwave, <br>
+        Coffee Maker, TV, MAN Turn Assist, Top Bar Beacons, <br>
+        Full DVD Cameras & Sensors. <br>
+        Warranty and Servicing until February 2025.<br>
+        
+        Condition: Truck as new and ready for immediate use.<br>
+        
+        Engine power: 510HP<br>
+        
+        Price: €45,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: M.A.N. 18.440 TGA XXL</h3>
+        <div class="slider" id="slider32">
+            <img src="{% static 'images/img man/TGA 1.jpg'%}" class="active">
+            <img src="{% static 'images/img man/TGA 2.jpg'%}">
+            <img src="{% static 'images/img man/TGA 7.jpg'%}">
+            <img src="{% static 'images/img man/TGA 8.jpg'%}">
+            <img src="{% static 'images/img man/TGA 9.jpg'%}">
+            <img src="{% static 'images/img man/TGA.jpg'%}">
+            <img src="{% static 'images/img man/TGA IN.jpg'%}">
+            <img src="{% static 'images/img man/TGA IN1.jpg'%}">
+            <img src="{% static 'images/img man/TGA IN3.jpg'%}">
+            <img src="{% static 'images/img man/TGA IN4.jpg'%}">
+            <img src="{% static 'images/img man/TGA IN5.jpg'%}">
+            <img src="{% static 'images/img man/TGA IN6.jpg'%}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider32')">Previous</button>
+            <button class="btn" onclick="nextImage('slider32')">Next</button>
+
+    <p> 
+
+        
+        
+        Description: 2007 M.A.N. 18.440 TGA XXL - 434 HP, <br>
+        Manual, Euro 3, 1,148,921 km, Retarder, 4x2 Configuration, <br>
+        Air Suspension, Well-Maintained. EXW. Ready for Immediate Use.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 434HP<br>
+        
+        Price: €12,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: MAN TGX 18.470</h3>
+        <div class="slider" id="slider33">
+            <img src="{% static 'images/img man/TGX18 1.jpg'%}" class="active">
+            <img src="{% static 'images/img man/TGX18 2.jpg'%}">
+            <img src="{% static 'images/img man/TGX18 3.jpg'%}">
+            <img src="{% static 'images/img man/TGX18 4.jpg'%}">
+            <img src="{% static 'images/img man/TGX18.jpg'%}">
+            <img src="{% static 'images/img man/TGX18 IN.jpg'%}">
+            <img src="{% static 'images/img man/TGX18 IN4.jpg'%}">
+            <img src="{% static 'images/img man/TGX18 IN5.jpg'%}">
+            <img src="{% static 'images/img man/TGX18 IN6.jpg'%}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider33')">Previous</button>
+            <button class="btn" onclick="nextImage('slider33')">Next</button>
+
+    <p>
+
+        
+        
+        Description: 2022 MAN TGX 18.470 - 470 hp, <br>
+        437,409 km, Euro 6, Excellent Condition, <br>
+        Ideal for Long-Haul Transport. Ready for Immediate Use!<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 470HP<br>
+        
+        Price: €45,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: MAN TGX 26.460</h3>
+        <div class="slider" id="slider34">
+            <img src="{% static 'images/img man/TGX26 460 1.jpg'%}"class="active">
+            <img src="{% static 'images/img man/TGX26 460 2.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 460 3.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 460 4.jpg'%}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider34')">Previous</button>
+            <button class="btn" onclick="nextImage('slider34')">Next</button>
+
+    <p> 
+
+        
+        
+        Description: 2019 MAN TGX 26.460 - 460 HP, 582,327 km, <br>
+        Euro 6, Ideal for Heavy Transport. <br>
+        Clean and Ready for Immediate Use.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 460HP<br>
+        
+        Price: €35,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: MAN TGX 26.640</h3>
+        <div class="slider" id="slider35">
+            <img src="{% static 'images/img man/TGX26 1.jpg'%}" class="active">
+            <img src="{% static 'images/img man/TGX26 2.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 3.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 4.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 5.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 6.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 7.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 B.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 IN.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 IN1.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 IN2.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 IN3.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 IN4.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 IN7.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 IN8.jpg'%}"> 
+            <img src="{% static 'images/img man/TGX26 S1.jpg'%}"> 
+            <img src="{% static 'images/img man/TGX26 S.jpg'%}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider35')">Previous</button>
+            <button class="btn" onclick="nextImage('slider35')">Next</button>
+
+    <p>
+
+        
+        
+        Description: 2020 MAN TGX 26.640 Special Commander Series - 640 hp, <br>
+        321,000 km, 6x2, XXL Cabin, Euro 6 D, Well-Maintained, <br>
+        Full Options, Ideal for Long-Haul Transport.<br>
+        
+        Condition: Working perfectly <br>
+        
+        Engine power: 640HP<br>
+        
+        Price: €60,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    
+    </div>
+
+    {% comment %} <div class="car-container">
+        <h3 class="het">Car Model 1</h3>
+        <div class="slider" id="slider1">
+            <img src="{% static 'images/img man/TGX26 W.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 W1.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 W2.jpg'%}">
+            <img src="{% static 'images/img man/TGX26 W3.jpg'%}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider1')">Previous</button>
+            <button class="btn" onclick="nextImage('slider1')">Next</button>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    
+    </div> {% endcomment %}
+
+    <div class="car-container">
+        <h3 class="het">Model: MAN TGX 28.500</h3>
+        <div class="slider" id="slider36">
+            <img src="{% static 'images/img man/TGX28 1.jpg'%}" class="active">
+            <img src="{% static 'images/img man/TGX28 2.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 3.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 4.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 5.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 6.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 B.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 IN.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 IN1.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 IN5.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 IN7.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 IN8.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 IN9.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 IN10.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 T.jpg'%}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider36')">Previous</button>
+            <button class="btn" onclick="nextImage('slider36')">Next</button>
+
+    <p> 
+
+        
+        
+        Description: 2017 MAN TGX 28.500 XXL - 500 hp, 547,000 km, <br>
+        Euro 6, 16-Speed Manual, Retarder, Fully Equipped, <br>
+        Sliding 5th Wheel, 6x2 Configuration, <br>
+        Ideal for Long-Haul Transport. <br>
+        Clean and Ready for Immediate Use.<br>
+        
+        Condition: Working perfectly <br>
+        
+        Engine power: 500HP<br>
+        
+        Price: €45,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: MAN TGX 28.500 XXL</h3>
+        <div class="slider" id="slider37">
+            <img src="{% static 'images/img man/TGX28 500 1.jpg'%}" class="active">
+            <img src="{% static 'images/img man/TGX28 500 2.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 500 3.jpg'%}">
+            <img src="{% static 'images/img man/TGX28 500 4.jpg'%}">        
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider37')">Previous</button>
+            <button class="btn" onclick="nextImage('slider37')">Next</button>
+
+    <p>
+        Description: 2018 MAN TGX 28.500 XXL - 500 hp, <br>
+        761,936 km, Euro 6, 6x2 Configuration, Full Options. <br>
+        Clean and Ready for Immediate Use.<br>
+        
+        Condition: Working Perfectly <br>
+        
+        Engine power: 500HP<br>
+        
+        Price: €30,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+    
+    <script src="{% static 'java/sliding.js' %}"></script>
+</body>
+</html>
